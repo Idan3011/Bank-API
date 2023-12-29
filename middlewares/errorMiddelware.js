@@ -1,0 +1,11 @@
+import 'dotenv/config';
+import STATUS_CODE from '../Constants/statusCode.js'
+
+export const errorHandler = (err, req, res, next) =>{
+    const statusCode = res.statusCode === STATUS_CODE.OK ? STATUS_CODE.INTERNAL_SERVER_ERROR : res.statusCode;
+    res.status(statusCode)
+    res.send({
+        massage: err.massage,
+        stack: process.env.NODE_ENV === 'production'? null : err.stack
+    })
+}
