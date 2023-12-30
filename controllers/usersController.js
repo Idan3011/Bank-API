@@ -32,8 +32,8 @@ export const getUserById = async (req, res, next) => {
 export const createUser = async (req, res, next) => {
   let totalCashFlow = 0;
   try {
-    const { userName, cash, credit, isActive } = req.body;
-    if (!cash || !credit || !isActive) {
+    const { userName, cash, credit} = req.body;
+    if (!cash || !credit) {
       res.status(STATUS_CODE.BAD_REQUEST);
       throw new Error("All fields (userName, Cash, Credit) are required");
     }
@@ -49,7 +49,7 @@ export const createUser = async (req, res, next) => {
       cash,
       credit,
       totalCashFlow,
-      isActive,
+      isActive: true,
       isAdmin: false,
       password: generatePassword()
     };
