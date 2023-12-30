@@ -47,6 +47,7 @@ export const createUser = async (req, res, next) => {
       credit,
       totalCashFlow,
       isActive,
+      isAdmin: false
     };
     users.push(newUser);
     writeUsersToFile(users);
