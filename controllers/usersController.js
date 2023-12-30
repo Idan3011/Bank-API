@@ -1,7 +1,7 @@
 import STATUS_CODE from "../Constants/statusCode.js";
 import { readUsersFromFile, writeUsersToFile } from "../models/usersModel.js";
 import { v4 as uuidv4 } from "uuid";
-
+import generatePassword from 'password-generator';
 export const getAllUsers = async (req, res, next) => {
   try {
     const users = readUsersFromFile();
@@ -10,6 +10,9 @@ export const getAllUsers = async (req, res, next) => {
     next(error);
   }
 };
+
+
+
 
 export const getUserById = async (req, res, next) => {
   try {
@@ -48,6 +51,7 @@ export const createUser = async (req, res, next) => {
       totalCashFlow,
       isActive,
       isAdmin: false,
+      password: generatePassword()
     };
     users.push(newUser);
     writeUsersToFile(users);

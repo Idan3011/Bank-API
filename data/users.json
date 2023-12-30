@@ -10,30 +10,53 @@
     "password": 123456
   },
   {
-    "id": "6c87232d-bb2c-4ced-a625-4678d00569f7",
-    "userName": "test tes3",
+    "id": "5660bcf1-2407-43fd-a044-287d18df88c3",
+    "userName": "test test1",
     "cash": 1000,
     "credit": 1000,
     "totalCashFlow": 2000,
     "isActive": true,
-    "isAdmin": false
+    "isAdmin": false,
+    "password": "bikitawupu"
   },
   {
-    "id": "dcca2a99-22d7-4171-ab47-6a6ff954aad7",
-    "userName": "test tes1",
+    "id": "0cde70b3-c201-4184-9def-727bd8a1aecd",
+    "userName": "test test2",
     "cash": 1000,
     "credit": 1000,
     "totalCashFlow": 2000,
     "isActive": true,
-    "isAdmin": false
+    "isAdmin": false,
+    "password": "toguxewuro"
   },
   {
-    "id": "1fc3179b-8f45-44c6-8ec9-7a27289abe59",
-    "userName": "test tes5",
+    "id": "b1e0c2b2-004c-43a1-adad-4bb3073e4ad4",
+    "userName": "test test3",
     "cash": 1000,
     "credit": 1000,
     "totalCashFlow": 2000,
     "isActive": true,
-    "isAdmin": false
+    "isAdmin": false,
+    "password": "tiyasureco"
+  },
+  {
+    "id": "3681dcd7-ca69-4058-a719-538220a33073",
+    "userName": "test test4",
+    "cash": 1000,
+    "credit": 1000,
+    "totalCashFlow": 2000,
+    "isActive": true,
+    "isAdmin": false,
+    "password": "vetumunapi"
+  },
+  {
+    "id": "2c7c704b-a787-42c2-a98b-f6f56c431006",
+    "userName": "test test5",
+    "cash": 1000,
+    "credit": 1000,
+    "totalCashFlow": 2000,
+    "isActive": true,
+    "isAdmin": false,
+    "password": "sojiseluve"
   }
 ]
