@@ -5,7 +5,7 @@
     "cash": 1000,
     "credit": 1000,
     "totalCashFlow": 2000,
-    "isActive": false,
+    "isActive": true,
     "isAdmin": true,
     "password": 123456
   },
