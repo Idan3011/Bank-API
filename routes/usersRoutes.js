@@ -8,7 +8,8 @@ import{
     cashTransffer,
     getUserById,
     getUsersByTotalMoney,
-    getUserByStatus
+    getUserByStatus,
+    deleteUser
 } from '../controllers/usersController.js'
 
 const router = express.Router();
@@ -42,5 +43,8 @@ router.put('/:id/cashtransffer', cashTransffer);
 // find users by there active status
 router.get('/userstatus/:isactive', getUserByStatus)
 
+// Delete user by Id
+
+router.delete('/deleteuser/:id', deleteUser)
 
 export default router

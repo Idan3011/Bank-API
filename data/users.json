@@ -10,16 +10,6 @@
     "password": 123456
   },
   {
-    "id": "5660bcf1-2407-43fd-a044-287d18df88c3",
-    "userName": "test test1",
-    "cash": 1000,
-    "credit": 1000,
-    "totalCashFlow": 2000,
-    "isActive": true,
-    "isAdmin": false,
-    "password": "bikitawupu"
-  },
-  {
     "id": "0cde70b3-c201-4184-9def-727bd8a1aecd",
     "userName": "test test2",
     "cash": 1000,
@@ -58,5 +48,15 @@
     "isActive": true,
     "isAdmin": false,
     "password": "sojiseluve"
+  },
+  {
+    "id": "5a659c6a-5dea-4bda-9c04-c15f60c12cf4",
+    "userName": "test test6",
+    "cash": 1000,
+    "credit": 1000,
+    "totalCashFlow": 2000,
+    "isActive": true,
+    "isAdmin": false,
+    "password": "qalacohube"
   }
 ]

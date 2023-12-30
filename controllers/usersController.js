@@ -75,7 +75,7 @@ export const cashDeposit = async (req, res, next) => {
     }
     if(user.isActive === false){
         res.status(STATUS_CODE.FORBIDDEN)
-        throw new Error(`${user.userName} IS not an active user. requset faild!`)
+        throw new Error(`${user.userName} Is not an active user. requset faild!`)
     }
     user.cash = user.cash + cashDeposit;
     user.totalCashFlow = user.cash + user.credit;
@@ -259,3 +259,26 @@ export const getUserByStatus = async (req, res, next) =>{
     next(error)
   }
 } 
+
+export const deleteUser = async (req, res, next)=>{
+
+  try {
+    const userId = req.params.id;
+  
+    
+    const users=readUsersFromFile()
+    const userindex = users.findIndex((user)=>userId === user.id)
+  
+    
+    if(userindex === -1){
+      res.status(STATUS_CODE.NOT_FOUND)
+      throw new Error(`there is no user with ${userId}. please try again`)
+    }
+    users.splice(userindex,1)
+    writeUsersToFile(users)
+    res.status(STATUS_CODE.OK).send(`user with id: ${userId} as been remove from the bank.`)
+  } catch (error) {
+    res.status(STATUS_CODE.BAD_REQUEST)
+    next(error)
+  }
+}
