@@ -1,1 +1,39 @@
-[{"userName":"Idan Rotenberg","id":"e7038dfb-e993-4ecd-a926-4d3cb837dec5","cash":1000,"credit":1000,"isActive":false,"totalCashFlow":2000,"isAdmin":true},{"id":"6c87232d-bb2c-4ced-a625-4678d00569f7","userName":"test tes3","cash":1000,"credit":1000,"totalCashFlow":2000,"isActive":true,"isAdmin":false},{"id":"dcca2a99-22d7-4171-ab47-6a6ff954aad7","userName":"test tes1","cash":1000,"credit":1000,"totalCashFlow":2000,"isActive":true,"isAdmin":false},{"id":"1fc3179b-8f45-44c6-8ec9-7a27289abe59","userName":"test tes5","cash":1000,"credit":1000,"totalCashFlow":2000,"isActive":true,"isAdmin":false}]
+[
+  {
+    "userName": "Idan Rotenberg",
+    "id": "e7038dfb-e993-4ecd-a926-4d3cb837dec5",
+    "cash": 1000,
+    "credit": 1000,
+    "isActive": false,
+    "totalCashFlow": 2000,
+    "isAdmin": true,
+    "password": 123456
+  },
+  {
+    "id": "6c87232d-bb2c-4ced-a625-4678d00569f7",
+    "userName": "test tes3",
+    "cash": 1000,
+    "credit": 1000,
+    "totalCashFlow": 2000,
+    "isActive": true,
+    "isAdmin": false
+  },
+  {
+    "id": "dcca2a99-22d7-4171-ab47-6a6ff954aad7",
+    "userName": "test tes1",
+    "cash": 1000,
+    "credit": 1000,
+    "totalCashFlow": 2000,
+    "isActive": true,
+    "isAdmin": false
+  },
+  {
+    "id": "1fc3179b-8f45-44c6-8ec9-7a27289abe59",
+    "userName": "test tes5",
+    "cash": 1000,
+    "credit": 1000,
+    "totalCashFlow": 2000,
+    "isActive": true,
+    "isAdmin": false
+  }
+]
