@@ -63,4 +63,4 @@
 
 ## Getting Started
 
-1. go to : `https://bank-api-iscz.onrender.com/` and add endpoint as you wish!
+1. go to : `https://bank-api-iscz.onrender.com/api/v1` and add endpoint as you wish!
